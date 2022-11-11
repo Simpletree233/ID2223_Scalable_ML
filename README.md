@@ -9,6 +9,8 @@ In this lab assignment, you will practice building a scalable serverless machine
 
 In the first task, you will build and run the Iris Flower Dataset as a serverless system. 
 
+Go to dir and install the requiements using: `pip install -r requirements.txt`
+
 In the second task, you will build a similar serverless ML service for the Titantic passenger survival dataset. You need to write the source code for this task yourself. It is a good idea to use the Iris Flower Dataset source code as a basis for building the Titantic service. 
 
 ## Task 1
