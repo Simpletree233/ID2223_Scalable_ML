@@ -1,11 +1,11 @@
 import os
 import modal
     
-LOCAL=True
+LOCAL=False
 
 if LOCAL == False:
-   stub = modal.Stub()
-   hopsworks_image = modal.Image.debian_slim().pip_install(["hopsworks","joblib","seaborn","sklearn","dataframe-image"])
+   stub = modal.Stub("Iris_Inference_daily")
+   hopsworks_image = modal.Image.debian_slim().pip_install(["hopsworks==3.0.4","joblib","seaborn","scikit-learn","dataframe-image"])
    @stub.function(image=hopsworks_image, schedule=modal.Period(days=1), secret=modal.Secret.from_name("HOPSWORKS_API_KEY"))
    def f():
        g()
@@ -103,6 +103,7 @@ if __name__ == "__main__":
     if LOCAL == True :
         g()
     else:
+        stub.deploy("Iris_Inference_daily")
         with stub.run():
             f()
 
