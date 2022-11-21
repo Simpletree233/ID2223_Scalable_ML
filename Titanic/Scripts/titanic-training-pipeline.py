@@ -64,8 +64,8 @@ def g():
     results = confusion_matrix(y_test, y_pred)
 
     # Create the confusion matrix as a figure, we will later store it as a PNG image file
-    df_cm = pd.DataFrame(results, ['True Survivor', 'True Death'],
-                         ['Pred Survivor', 'Pred Death'])
+    df_cm = pd.DataFrame(results, ['True Death','True Survivor'],
+                         ['Pred Death','Pred Survivor'])
     cm = sns.heatmap(df_cm, annot=True)
     fig = cm.get_figure()
 
