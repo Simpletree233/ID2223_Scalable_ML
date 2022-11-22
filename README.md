@@ -3,50 +3,51 @@ ID2223 Lab
 
 
 Lab1 description:
-[Source code](https://github.com/ID2223KTH/id2223kth.github.io/tree/master/src/serverless-ml-intro)
 
-In this lab assignment, you will practice building a scalable serverless machine learning system, consisting of a feature pipeline, a training pipeline, a batch inference pipeline, and a user interface (one for interactive querying, one as a dashboard).
+Part 1: Feature Engineering
+Refer to Machine_Learning_Model for the full implementation
+1. Drop columns with low predictive power
+2. Convert Cabin column to Deck column
+3. Impute Nan values (Age with median age, Deck,Embarked with "N" to indicate missing)
+4. One hot encode categorical variables
 
-In the first task, you will build and run the Iris Flower Dataset as a serverless system. 
+Part 2: Model training
+1. Selected Ensemble method Bagging for model
+2. Use GridSearch to search for best parameter from specified parameter space
+3. Use best parameter found to train model in titanic-training-pipeline.py
 
-Go to dir and install the requiements using: `pip install -r requirements.txt`
+Part 3: Scripts to upload data to hopsworks
+1. Uploaded transformed titanic dataset to hopsworks feature group (titanic-feature-pipeline.py)
+2. Uploaded trained model to hopsworks model registry (titanic-training-pipeline.py)
+3. Generate random features and upload to hopsworks (titanic-feature-pipeline-daily.py)
+4. Predict and upload the results in the form of images to hopsworks (titanic-batch-inference-pipeline.py)
+ 
+ -Image of today's actual label and prediction
+ 
+ -Dataframe of latest 5 predictions
+ 
+ -Confusion matrix of all previous predictions
 
-In the second task, you will build a similar serverless ML service for the Titantic passenger survival dataset. You need to write the source code for this task yourself. It is a good idea to use the Iris Flower Dataset source code as a basis for building the Titantic service. 
+Part 4: Hugging face interface
 
-## Task 1
-Serverless ML
+Link to titanic prediction interface
+https://huggingface.co/spaces/WayneLinn/ID2223-Lab1-Titanic-Survivor-Prediction
 
-First Steps
-1. Create a free account on hopsworks.ai
-2. Create a free account on modal.com
-2. Create a free account on huggingface.com
+Instructions on how to use interface
 
-● Tasks
-1. Build and run a feature pipeline on Modal
-1. Build and run a training pipeline on Modal
-1. Build and run an inference pipeline with a Gradio UI on Hugging Face 
-Spaces.
+All entries must be provided to avoid errors. 
 
+Output interpretation (In case it is not clear)
+"Dead 110 years ago rip" -> dead
+"Dead but not on the titanic" -> survived
 
-## Task 2
-The Titanic Dataset:
-a. https://raw.githubusercontent.com/ID2223KTH/id2223kth.github.io/master/assignments/lab1/titanic.csv
+Link to titanic prediction monitor
+https://huggingface.co/spaces/WayneLinn/ID2223-Lab1-Titanic-Prediction-Monitor
+Bonus: Added 2 buttons to allow retrivial of the latest result and update the images.
 
-2. Write a feature pipeline that registers the titantic dataset as a Feature Group with 
-Hopsworks. You are free to drop or clean up features with missing values.
-3. Write a training pipeline that reads training data with a Feature View from Hopsworks, 
-trains a binary classifier model to predict if a particular passenger survived the Titanic 
-or not. Register the model with Hopsworks.
-4. Write a Gradio application that downloads your model from Hopsworks and provides a 
-User Interface to allow users to enter or select feature values to predict if a passenger 
-with the provided features would survive or not.
-5. Write a synthetic data passenger generator and update your feature pipeline to allow it 
-to add new synthetic passengers.
-6. Write a batch inference pipeline to predict if the synthetic passengers survived or not, 
-and build a Gradio application to show the most recent synthetic passenger prediction 
-and outcome, and a confusion matrix with historical prediction performance. 
+Instruction on how to use
+1. Press Load
+2. Wait 2-5 seconds
+3. Press refresh to see latest result
 
 
-References: https://www.kaggle.com/competitions/titanic/data
-
- https://www.ritchieng.com/pandas-scikit-learn/
