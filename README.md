@@ -1,8 +1,16 @@
 # ID2223_Scalable_ML_Lab1
-ID2223 Lab
-
 
 Lab1 description:
+
+## Task 1
+
+Link to Iris prediction interface:
+https://huggingface.co/spaces/Yuyang2022/Iris_Prediction
+
+Link to Iris prediction monitor:
+https://huggingface.co/spaces/Yuyang2022/Iris_Monitor
+
+## Task 2
 
 Part 1: Feature Engineering
 Refer to *Machine_Learning_Model.ipynb* for the full implementation
@@ -40,6 +48,7 @@ https://huggingface.co/spaces/WayneLinn/ID2223-Lab1-Titanic-Survivor-Prediction
 
 Link to titanic prediction monitor
 https://huggingface.co/spaces/WayneLinn/ID2223-Lab1-Titanic-Prediction-Monitor
+
 Bonus: Added 2 buttons to allow retrivial of the latest result and update the images.
 
 > ### Instruction on how to use monitor
