@@ -1,12 +1,12 @@
-# ID2223_Scalable_ML
+# ID2223_Scalable_ML_Lab1
 ID2223 Lab
 
 
 Lab1 description:
 
 Part 1: Feature Engineering
-Refer to Machine_Learning_Model for the full implementation
-1. Drop columns with low predictive power
+Refer to *Machine_Learning_Model.ipynb* for the full implementation
+1. Drop columns with low predictive power (For example, drop "Name", "Ticket", "PassengerId")
 2. Convert Cabin column to Deck column
 3. Impute Nan values (Age with median age, Deck,Embarked with "N" to indicate missing)
 4. One hot encode categorical variables
@@ -21,33 +21,30 @@ Part 3: Scripts to upload data to hopsworks
 2. Uploaded trained model to hopsworks model registry (titanic-training-pipeline.py)
 3. Generate random features and upload to hopsworks (titanic-feature-pipeline-daily.py)
 4. Predict and upload the results in the form of images to hopsworks (titanic-batch-inference-pipeline.py)
+   - Image of today's actual label and prediction
  
- -Image of today's actual label and prediction
+   - Dataframe of latest 5 predictions
  
- -Dataframe of latest 5 predictions
- 
- -Confusion matrix of all previous predictions
+   - Confusion matrix of all previous predictions
 
 Part 4: Hugging face interface
 
 Link to titanic prediction interface
 https://huggingface.co/spaces/WayneLinn/ID2223-Lab1-Titanic-Survivor-Prediction
 
-Instructions on how to use interface
-
-All entries must be provided to avoid errors. 
-
-Output interpretation (In case it is not clear)
-"Dead 110 years ago rip" -> dead
-"Dead but not on the titanic" -> survived
+> ### Instructions on how to use interface
+> All entries must be provided to avoid errors. 
+> Output interpretation (In case it is not clear)
+> "Dead 110 years ago rip" -> dead
+> "Dead but not on the titanic" -> survived
 
 Link to titanic prediction monitor
 https://huggingface.co/spaces/WayneLinn/ID2223-Lab1-Titanic-Prediction-Monitor
 Bonus: Added 2 buttons to allow retrivial of the latest result and update the images.
 
-Instruction on how to use
-1. Press Load
-2. Wait 2-5 seconds
-3. Press refresh to see latest result
+> ### Instruction on how to use monitor
+> 1. Press Load
+> 2. Wait 2-5 seconds
+> 3. Press refresh to see latest result
 
 
