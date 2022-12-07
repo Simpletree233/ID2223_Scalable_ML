@@ -1,0 +1,55 @@
+Collecting evaluate
+  Downloading evaluate-0.3.0-py3-none-any.whl (72 kB)
+     ---------------------------------------- 72.9/72.9 kB 2.0 MB/s eta 0:00:00
+Requirement already satisfied: requests>=2.19.0 in c:\programdata\anaconda3\lib\site-packages (from evaluate) (2.24.0)
+Collecting fsspec[http]>=2021.05.0
+  Using cached fsspec-2022.11.0-py3-none-any.whl (139 kB)
+Collecting datasets>=2.0.0
+  Using cached datasets-2.7.1-py3-none-any.whl (451 kB)
+Collecting dill
+  Using cached dill-0.3.6-py3-none-any.whl (110 kB)
+Requirement already satisfied: pandas in c:\programdata\anaconda3\lib\site-packages (from evaluate) (1.1.3)
+Requirement already satisfied: packaging in c:\programdata\anaconda3\lib\site-packages (from evaluate) (20.4)
+Requirement already satisfied: xxhash in c:\programdata\anaconda3\lib\site-packages (from evaluate) (3.1.0)
+Collecting multiprocess
+  Using cached multiprocess-0.70.14-py38-none-any.whl (132 kB)
+Requirement already satisfied: numpy>=1.17 in c:\users\simpletree\appdata\roaming\python\python38\site-packages (from evaluate) (1.22.2)
+Collecting responses<0.19
+  Using cached responses-0.18.0-py3-none-any.whl (38 kB)
+Requirement already satisfied: tqdm>=4.62.1 in c:\programdata\anaconda3\lib\site-packages (from evaluate) (4.64.1)
+Collecting huggingface-hub>=0.7.0
+  Using cached huggingface_hub-0.11.1-py3-none-any.whl (182 kB)
+Requirement already satisfied: pyarrow>=6.0.0 in c:\programdata\anaconda3\lib\site-packages (from datasets>=2.0.0->evaluate) (10.0.0)
+Collecting aiohttp
+  Using cached aiohttp-3.8.3-cp38-cp38-win_amd64.whl (324 kB)
+Requirement already satisfied: pyyaml>=5.1 in c:\programdata\anaconda3\lib\site-packages (from datasets>=2.0.0->evaluate) (5.3.1)
+Requirement already satisfied: filelock in c:\programdata\anaconda3\lib\site-packages (from huggingface-hub>=0.7.0->evaluate) (3.0.12)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in c:\programdata\anaconda3\lib\site-packages (from huggingface-hub>=0.7.0->evaluate) (4.4.0)
+Collecting packaging
+  Using cached packaging-21.3-py3-none-any.whl (40 kB)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in c:\programdata\anaconda3\lib\site-packages (from packaging->evaluate) (2.4.7)
+Requirement already satisfied: idna<3,>=2.5 in c:\programdata\anaconda3\lib\site-packages (from requests>=2.19.0->evaluate) (2.10)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in c:\programdata\anaconda3\lib\site-packages (from requests>=2.19.0->evaluate) (1.25.11)
+Requirement already satisfied: chardet<4,>=3.0.2 in c:\programdata\anaconda3\lib\site-packages (from requests>=2.19.0->evaluate) (3.0.4)
+Requirement already satisfied: certifi>=2017.4.17 in c:\programdata\anaconda3\lib\site-packages (from requests>=2.19.0->evaluate) (2020.6.20)
+Requirement already satisfied: colorama in c:\programdata\anaconda3\lib\site-packages (from tqdm>=4.62.1->evaluate) (0.4.4)
+Requirement already satisfied: python-dateutil>=2.7.3 in c:\programdata\anaconda3\lib\site-packages (from pandas->evaluate) (2.8.1)
+Requirement already satisfied: pytz>=2017.2 in c:\programdata\anaconda3\lib\site-packages (from pandas->evaluate) (2022.6)
+Collecting aiosignal>=1.1.2
+  Using cached aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+Collecting charset-normalizer<3.0,>=2.0
+  Using cached charset_normalizer-2.1.1-py3-none-any.whl (39 kB)
+Requirement already satisfied: attrs>=17.3.0 in c:\programdata\anaconda3\lib\site-packages (from aiohttp->datasets>=2.0.0->evaluate) (20.3.0)
+Collecting yarl<2.0,>=1.0
+  Using cached yarl-1.8.2-cp38-cp38-win_amd64.whl (56 kB)
+Collecting frozenlist>=1.1.1
+  Using cached frozenlist-1.3.3-cp38-cp38-win_amd64.whl (34 kB)
+Collecting multidict<7.0,>=4.5
+  Using cached multidict-6.0.3-cp38-cp38-win_amd64.whl (28 kB)
+Collecting async-timeout<5.0,>=4.0.0a3
+  Using cached async_timeout-4.0.2-py3-none-any.whl (5.8 kB)
+Requirement already satisfied: six>=1.5 in c:\programdata\anaconda3\lib\site-packages (from python-dateutil>=2.7.3->pandas->evaluate) (1.15.0)
+Installing collected packages: packaging, multidict, fsspec, frozenlist, dill, charset-normalizer, async-timeout, yarl, responses, multiprocess, huggingface-hub, aiosignal, aiohttp, datasets, evaluate
+  Attempting uninstall: packaging
+    Found existing installation: packaging 20.4
+    Uninstalling packaging-20.4:
