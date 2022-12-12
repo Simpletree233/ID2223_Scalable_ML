@@ -16,9 +16,12 @@ We used a model centric approach to improve the permance as possible under a con
 ## Program refactor
 
 1. Feature enginerring pipeline on CPU
+> see `feature_pipeline.py`
 
 
 2. Training pipeline on GPUs
   1. Checkpoint
+> see `.ipynb`
 
 3. Inference on Huggingface
+> see Huggingface Space
