@@ -20,8 +20,7 @@ We used a model centric approach to improve the permance as possible under a con
 
 
 2. Training pipeline on GPUs
-  1. Checkpoint
-> see `.ipynb`
+> see `Model_training.ipynb`
 
 3. Inference on Huggingface
 > see Huggingface Space
