@@ -7,9 +7,11 @@ Plus a video speech recognition: [Youtube video transcription](https://huggingfa
 ## Model Performance
 We used a model centric approach to improve the permance as possible under a constraint of computational resources. To achieve this, we modify the configurations as follows:
 
-1. Initially, under... the WER is ...
-2. Then, we changed ... ,this is becauses...
-3. the fianl..
+1. Initially, a Whisper-base model is trained and saved at checkpoints=500. The WER is around 80%.
+1. Then, we keep training the model and save it at checkpint=1000, the WER doesnt change, it still remains at 80%.
+1. For faster convergence, the learning rate is doubled and evaluation epoch is increased to accelerate training. 
+1. the final result is still so-so, but we have trained another Whisper-small model. 
+1. The difficulty is that the training data set for Chinese language is too large. In Huggingface, if we want to split the dataset we will have to write our own funciton.  
 
 ## Program refactor
 
@@ -19,4 +21,4 @@ We used a model centric approach to improve the permance as possible under a con
 2. Training pipeline on GPUs
   1. Checkpoint
 
-3. 
+3. Inference on Huggingface
