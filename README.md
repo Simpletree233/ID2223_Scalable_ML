@@ -1,6 +1,8 @@
 # ID2223_Scalable_ML_Lab2
 
-[Hugging face link](https://huggingface.co/spaces/Yuyang2022/Cantonese_speech_recognition/blob/main/requirements.txt)
+Here is the provided demo: [audio recognition](https://huggingface.co/spaces/Yuyang2022/Cantonese_speech_recognition)
+
+Plus a video speech recognition: [Youtube video transcription](https://huggingface.co/spaces/WayneLinn/Cantonese_Speech_Recognition)
 
 ## Model Performance
 We used a model centric approach to improve the permance as possible under a constraint of computational resources. To achieve this, we modify the configurations as follows:
