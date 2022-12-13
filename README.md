@@ -4,6 +4,8 @@ Here is the provided demo: [audio recognition](https://huggingface.co/spaces/Yuy
 
 Plus a video speech recognition: [Youtube video transcription](https://huggingface.co/spaces/WayneLinn/Cantonese_Speech_Recognition)
 
+SPeech to speech translation: [From Cantonese to any chosen language](https://huggingface.co/spaces/Yuyang2022/Translation_yue_to_any)
+
 ## Model Performance
 We used a model centric approach to improve the permance as possible under a constraint of computational resources. To achieve this, we modify the configurations as follows:
 
